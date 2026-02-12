@@ -3,9 +3,29 @@
 ## Propuesta del Proyecto
 El propósito de este proyecto es definir los requerimientos funcionales y no funcionales para el desarrollo de un sistema de software destinado a la administración de una tienda minorista. El objetivo principal es automatizar el proceso de venta y generar reportes financieros básicos.
 
-## Requerimientos y Requisitos (IEEE 830)
+# Levantamiento de Requerimientos
 
-### Requerimientos Funcionales
+## Entrevista Inicial
+
+**Estudiante (ISC):**
+Buenos días, soy estudiante de ISC en el Tecnológico de Motul y como parte de mi proyecto en la materia de Ingeniería en Software vengo a hablar de las dificultades que usted tenga a la hora de administrar su tienda de abarrotes.
+
+**Cliente (Dueño de la tienda):**
+Adelante, joven.
+
+**Estudiante (ISC):**
+¿Qué es lo que más se le dificulta en la tienda?
+
+**Cliente (Dueño de la tienda):**
+Bueno, lo principal es que quiero automatizar el proceso de venta, ya que actualmente me cuesta trabajo registrar los productos con sus costos y precios de venta. También se me complica el cobro, necesito que el cálculo de totales sea automático a medida que agrego productos para no tardar, y al final del día me gustaría poder generar reportes de cierre de caja con el cálculo de mis ganancias, cosa que ahora no puedo hacer bien.
+
+**Estudiante (ISC):**
+Bueno tomando en cuenta lo que me dijo, ¿qué le parece una aplicación de Sistema de Punto de Venta (POS) que le permita realizar ventas mediante el escaneo de códigos de barras y busque automáticamente el producto en la base de datos?
+
+**Cliente (Dueño de la tienda):**
+¡Me parece excelente, joven! La verdad es justo lo que necesito. Si esa aplicación puede hacer las sumas solita y decirme el precio nada más pasando el producto, me quitaría un gran peso de encima. Así ya no tendría que estar batallando con la calculadora ni preocupándome por si cobré mal. ¿Es muy difícil de aprender a usarla?
+
+
 ### Requerimientos Funcionales
 
 | ID Requisito | Requisito | Descripción de requisito | Negocio/Necesidad/oportunidad/objetivo | ¿Quién lo solicita? | Rol/Departamento | Entregable | Casos de prueba | Estado | Comentarios |
