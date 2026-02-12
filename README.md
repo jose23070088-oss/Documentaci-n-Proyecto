@@ -93,11 +93,10 @@ Desarrollar e implementar un sistema de software de Punto de Venta (POS) e Inven
 | **RNF05** | Fiabilidad (Manejo de Errores) | El sistema debe mostrar alertas claras si un código no existe, sin cerrarse ni bloquearse. | **Continuidad operativa:** Asegurar que la venta continúe aunque haya errores de lectura. | Tienda Abarrotes | Cajero | 1.0 | Prueba de Excepciones | Pendiente | Validar entradas nulas o incorrectas. |
 
 ---
-# 📋 Backlog del Proyecto: Sistema POS Tienda de Abarrotes
+# Matriz de trazabilidad
 
-## Requerimientos del Sistema
 
-| 🆔 ID | 📝 Requisito | 📄 Descripción | 🚦 Estado | 🏷️ Etiquetas |
+|  ID |  Requisito |  Descripción |  Estado |  Etiquetas |
 | :--- | :--- | :--- | :--- | :--- |
 | **RF-01** | **Iniciar Sesión** | Pantalla de acceso (Login) que solicite Usuario y Contraseña. Bloqueo tras 3 intentos fallidos. | `🔘 Sin empezar` | `Seguridad` `Prioridad Alta` |
 | **RF-02** | **Gestión de Usuarios** | Módulo para que el Admin pueda crear, editar y borrar cuentas de cajeros. | `🔘 Sin empezar` | `Admin` `Seguridad` |
