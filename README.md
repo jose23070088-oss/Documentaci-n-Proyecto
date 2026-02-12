@@ -7,13 +7,13 @@ El propósito de este proyecto es definir los requerimientos funcionales y no fu
 
 ## Entrevista Inicial
 
-**Estudiante (ISC):**
+**Estudiante :**
 Buenos días, soy estudiante de ISC en el Tecnológico de Motul y como parte de mi proyecto en la materia de Ingeniería en Software vengo a hablar de las dificultades que usted tenga a la hora de administrar su tienda de abarrotes.
 
 **Cliente (Dueño de la tienda):**
 Adelante, joven.
 
-**Estudiante (ISC):**
+**Estudiante :**
 ¿Qué es lo que más se le dificulta en la tienda?
 
 **Cliente (Dueño de la tienda):**
@@ -23,7 +23,7 @@ Bueno, lo principal es que quiero automatizar el proceso de venta, ya que actual
 Bueno tomando en cuenta lo que me dijo, ¿qué le parece una aplicación de Sistema de Punto de Venta (POS) que le permita realizar ventas mediante el escaneo de códigos de barras y busque automáticamente el producto en la base de datos?
 
 **Cliente (Dueño de la tienda):**
-¡Me parece excelente, joven! La verdad es justo lo que necesito. Si esa aplicación puede hacer las sumas solita y decirme el precio nada más pasando el producto, me quitaría un gran peso de encima. Así ya no tendría que estar batallando con la calculadora ni preocupándome por si cobré mal. ¿Es muy difícil de aprender a usarla?
+La verdad es justo lo que necesito. Si esa aplicación puede hacer las sumas solita y decirme el precio nada más pasando el producto, me quitaría un gran peso de encima. Así ya no tendría que estar batallando con la calculadora ni preocupándome por si cobré mal.
 
 
 ### Requerimientos Funcionales
