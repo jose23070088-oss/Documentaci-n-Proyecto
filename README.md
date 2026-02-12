@@ -17,7 +17,7 @@ Adelante, joven.
 **Cliente (Dueño de la tienda):**
 Bueno, lo principal es que quiero automatizar el proceso de venta, ya que actualmente me cuesta trabajo registrar los productos con sus costos y precios de venta. También se me complica el cobro, necesito que el cálculo de totales sea automático a medida que agrego productos para no tardar, y al final del día me gustaría poder generar reportes de cierre de caja con el cálculo de mis ganancias, cosa que ahora no puedo hacer bien.
 
-**Estudiante (ISC):**
+**Estudiante :**
 Bueno tomando en cuenta lo que me dijo, ¿qué le parece una aplicación de Sistema de Punto de Venta (POS) que le permita realizar ventas mediante el escaneo de códigos de barras y busque automáticamente el producto en la base de datos?
 
 **Cliente (Dueño de la tienda):**
@@ -25,16 +25,37 @@ La verdad es justo lo que necesito. Si esa aplicación puede hacer las sumas sol
 
 # Levantamiento de Requerimientos
 
-## 🚨 1. Problemática Actual
+## Problemática Actual
 La tienda enfrenta actualmente desafíos operativos críticos derivados de la gestión manual, lo que afecta la rentabilidad y calidad del servicio:
 
-* **🐢 Lentitud en el servicio:** La búsqueda manual de precios provoca filas y tiempos de espera innecesarios para el cliente.
-* **💸 Pérdidas financieras en caja:** Los errores humanos al calcular el cambio (vuelto) generan diferencias de dinero y fugas de capital al final del día.
-* **📦 Descontrol de inventario:** La falta de visibilidad sobre *"cuánto hay"* y *"cuánto queda"* provoca desabastecimiento (pérdida de ventas) o acumulación de mercancía innecesaria (dinero estancado).
+## Requerimientos del Sistema
 
+### Optimizar el proceso de ventas
+- [ ] Búsqueda rápida de precios (escáner/nombre)
+- [ ] Cálculo automático de totales
+- [ ] Cálculo de cambio a entregar
+- [ ] Visualización clara de precios en pantalla
+- [ ] Cancelación rápida de artículos
+- [ ] Generación de ticket de venta
+
+###  Organización de inventario
+- [ ] Registro de productos (Alta y Baja)
+- [ ] Registro de cantidad inicial
+- [ ] Búsqueda de producto por nombre
+- [ ] Descuento automático de stock tras venta
+- [ ] Visualización de "cuánto hay" en tiempo real
+- [ ] Alertas de baja disponibilidad ("cuánto queda")
+- [ ] Reporte de productos agotados
+
+###  Control de administración y seguridad
+- [ ] Perfiles de acceso (Administrador vs Cajero)
+- [ ] Restricción de cambio de precios
+- [ ] Cortes de caja diarios
+- [ ] Funcionamiento sin internet (Offline)
+- [ ] Historial de transacciones
 ---
 
-## 💡 2. Justificación
+## Justificación
 La implementación de este sistema se justifica como una solución tecnológica urgente para automatizar los procesos operativos. 
 
 El software logrará:
@@ -45,24 +66,10 @@ El software logrará:
 
 ---
 
-## 🎯 3. Objetivos del Proyecto
+## 3. Objetivos del Proyecto
 
 ### Objetivo General
 Desarrollar e implementar un sistema de software de Punto de Venta (POS) e Inventario que automatice el proceso de cobro y la gestión de existencias, optimizando los tiempos de atención y asegurando la integridad financiera del negocio.
-
-### Objetivos Específicos
-- [ ] **Reducir el tiempo de cobro:** Disminuir en un 50% el tiempo por transacción mediante el uso de búsqueda rápida y escaneo de productos.
-- [ ] **Eliminar errores de caja:** Garantizar el cálculo exacto del cambio a entregar al cliente mediante un asistente de cobro automatizado.
-- [ ] **Controlar el stock en tiempo real:** Mantener un registro actualizado de las existencias, descontando productos automáticamente tras cada venta y generando alertas de stock bajo.
-
----
-
-## 🛠️ Tecnologías (Próximamente)
-* *Lenguaje:* [Aquí pondrás el lenguaje, ej. Python/Java]
-* *Base de Datos:* [Ej. SQLite/MySQL]
-* *Interfaz:* [Ej. Tkinter/Web]
-
----
 
 
 ### Requerimientos Funcionales
