@@ -1,30 +1,29 @@
 # Etapa 1: Análisis
 
 ## Propuesta del Proyecto
-[cite_start]El propósito de este documento es definir los requerimientos funcionales y no funcionales para el desarrollo de un sistema de software destinado a la administración de una tienda minorista[cite: 3]. [cite_start]El objetivo principal es automatizar el proceso de venta y generar reportes financieros básicos[cite: 4].
+El propósito de este proyecto es definir los requerimientos funcionales y no funcionales para el desarrollo de un sistema de software destinado a la administración de una tienda minorista. El objetivo principal es automatizar el proceso de venta y generar reportes financieros básicos.
 
 ## Requerimientos y Requisitos (IEEE 830)
 
 ### Requerimientos Funcionales
 * **Módulo de Ventas (Caja):**
-    * [cite_start]Lectura de Códigos mediante escáner de barras[cite: 12].
-    * [cite_start]Búsqueda automática de productos en la base de datos[cite: 13].
-    * [cite_start]Recuperación de Precios y descripción inmediata[cite: 14].
-    * [cite_start]Cálculo de Totales automático al agregar productos[cite: 15].
-* **Módulo de Inventario:**
-    * [cite_start]Gestión de Productos (Agregar, Editar y Eliminar)[cite: 17].
-    * [cite_start]Almacenamiento de Código de Barras, Descripción, Precio de Costo y Precio de Venta[cite: 18, 19, 20, 21, 22].
-* **Módulo de Reportes:**
-    * [cite_start]Registro de historial de ventas con fecha y hora[cite: 24].
-    * [cite_start]Generación de reporte diario de ganancias y total vendido[cite: 25, 26].
+    * **Lectura de Códigos:** El sistema debe ser capaz de recibir la entrada de un lector de códigos de barras. Al escanear un código, el sistema debe buscar automáticamente el producto en la base de datos.
+    * **Recuperación de Precios:** Al identificar el producto escaneado, el sistema debe mostrar inmediatamente su descripción y precio de venta al público en la lista de compra actual.
+    * **Cálculo de Totales:** El sistema debe sumar automáticamente el total de la venta a medida que se agregan productos.
+* **Módulo de Inventario (Administrador de Productos):**
+    * **Gestión de Productos:** El sistema debe permitir al administrador Agregar, Editar y Eliminar productos.
+    * **Datos del Producto:** Cada producto debe tener almacenada la siguiente información mínima: Código de Barras, Descripción/Nombre, Precio de Costo y Precio de Venta.
+* **Módulo de Reportes y Finanzas:**
+    * **Registro de Ventas:** Cada venta finalizada debe guardarse en el historial con fecha y hora.
+    * **Reporte de Ganancias del Día:** El sistema debe generar un reporte diario que muestre el total vendido (la suma de todo el dinero ingresado).
 
 ### Requerimientos No Funcionales
-* [cite_start]**Usabilidad:** Interfaz intuitiva optimizada para teclado y escáner[cite: 28].
-* [cite_start]**Rendimiento:** Tiempo de búsqueda de producto menor a 1 segundo[cite: 29].
-* [cite_start]**Persistencia:** Almacenamiento seguro en base de datos local MySQL[cite: 30].
+* **Usabilidad:** La interfaz de ventas debe ser intuitiva y permitir la operación rápida, minimizando el uso del mouse y priorizando el teclado/escáner.
+* **Rendimiento:** La búsqueda del producto al escanear el código no debe tardar más de 1 segundo.
+* **Persistencia:** Los datos deben almacenarse en una base de datos local (MySQL) para asegurar que la información no se pierda al cerrar el programa.
 
 ---
 
 # Etapa 2: Diseño
 
-*(Aquí puedes comenzar a añadir los diagramas de flujo, el diseño de la base de datos `bdtarea` o capturas de pantalla de la interfaz que estás desarrollando en NetBeans)*
+*(Aquí puedes añadir la estructura de tus tablas de SQL o el diseño de las ventanas de Java)*
