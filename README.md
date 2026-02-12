@@ -3,8 +3,6 @@
 ## Propuesta del Proyecto
 El propósito de este proyecto es definir los requerimientos funcionales y no funcionales para el desarrollo de un sistema de software destinado a la administración de una tienda minorista. El objetivo principal es automatizar el proceso de venta y generar reportes financieros básicos.
 
-# Levantamiento de Requerimientos
-
 ## Entrevista Inicial
 
 **Estudiante :**
@@ -24,6 +22,8 @@ Bueno tomando en cuenta lo que me dijo, ¿qué le parece una aplicación de Sist
 
 **Cliente (Dueño de la tienda):**
 La verdad es justo lo que necesito. Si esa aplicación puede hacer las sumas solita y decirme el precio nada más pasando el producto, me quitaría un gran peso de encima. Así ya no tendría que estar batallando con la calculadora ni preocupándome por si cobré mal.
+
+# Levantamiento de Requerimientos
 
 ## 🚨 1. Problemática Actual
 La tienda enfrenta actualmente desafíos operativos críticos derivados de la gestión manual, lo que afecta la rentabilidad y calidad del servicio:
