@@ -1,7 +1,9 @@
 # Etapa 1: Análisis
 
-## Propuesta del Proyecto
-El propósito de este proyecto es definir los requerimientos funcionales y no funcionales para el desarrollo de un sistema de software destinado a la administración de una tienda minorista. El objetivo principal es automatizar el proceso de venta y generar reportes financieros básicos.
+## Proyecto: Sistema de Punto de Venta (POS) "Los Dos Hermanos"
+
+## Introducción
+La tienda de abarrotes **"Los Dos Hermanos"** actualmente gestiona sus ventas y control de inventario de forma manual, basándose en la memoria del dueño, anotaciones en libreta y uso de calculadora básica. Esto ha generado lentitud en el cobro, errores en el cálculo de cambio, desconocimiento de las ganancias reales y falta de control sobre el stock.
 
 ## Entrevista Inicial
 
@@ -25,34 +27,29 @@ La verdad es justo lo que necesito. Si esa aplicación puede hacer las sumas sol
 
 # Levantamiento de Requerimientos
 
-## Problemática Actual
-La tienda enfrenta actualmente desafíos operativos críticos derivados de la gestión manual, lo que afecta la rentabilidad y calidad del servicio:
-
-## Requerimientos del Sistema
-
 ### Optimizar el proceso de ventas
-- [ ] Búsqueda rápida de precios (escáner/nombre)
-- [ ] Cálculo automático de totales
-- [ ] Cálculo de cambio a entregar
-- [ ] Visualización clara de precios en pantalla
-- [ ] Cancelación rápida de artículos
-- [ ] Generación de ticket de venta
+- Búsqueda rápida de precios (escáner/nombre)
+- Cálculo automático de totales
+- Cálculo de cambio a entregar
+- Visualización clara de precios en pantalla
+- Cancelación rápida de artículos
+- Generación de ticket de venta
 
 ###  Organización de inventario
-- [ ] Registro de productos (Alta y Baja)
-- [ ] Registro de cantidad inicial
-- [ ] Búsqueda de producto por nombre
-- [ ] Descuento automático de stock tras venta
-- [ ] Visualización de "cuánto hay" en tiempo real
-- [ ] Alertas de baja disponibilidad ("cuánto queda")
-- [ ] Reporte de productos agotados
+- Registro de productos (Alta y Baja)
+- Registro de cantidad inicial
+- Búsqueda de producto por nombre
+- Descuento automático de stock tras venta
+- Visualización de "cuánto hay" en tiempo real
+- Alertas de baja disponibilidad ("cuánto queda")
+- Reporte de productos agotados
 
 ###  Control de administración y seguridad
-- [ ] Perfiles de acceso (Administrador vs Cajero)
-- [ ] Restricción de cambio de precios
-- [ ] Cortes de caja diarios
-- [ ] Funcionamiento sin internet (Offline)
-- [ ] Historial de transacciones
+- Perfiles de acceso (Administrador vs Cajero)
+- Restricción de cambio de precios
+- Cortes de caja diarios
+- Funcionamiento sin internet (Offline)
+- Historial de transacciones
 ---
 
 ## Justificación
@@ -65,11 +62,49 @@ El software logrará:
 4.  Transformar la operación de la tienda en un modelo eficiente y seguro.
 
 ---
+**Objetivo del estudio:**
+Determinar la viabilidad del desarrollo e implementación de un software de escritorio a medida para automatizar el proceso de venta y control de existencias.
 
+##  Descripción del Proyecto
+* **Nombre del software:** POS Los Dos Hermanos v1.0
+* **Propósito:** Automatizar el cobro de productos mediante lectura de códigos de barras, gestionar el inventario (entradas y salidas) y generar reportes financieros.
+* **Usuarios:**
+    * **Cajero:** Encargado de ventas (Usuario operativo).
+    * **Administrador:** Dueño (Acceso total a inventario y reportes).
+
+**Alcance:**
+* Módulo de Login (Seguridad).
+* Ventas rápidas con escáner.
+* Búsqueda manual de productos.
+* Gestión de Inventario (Altas/Bajas).
+* Reporte de corte de caja.
+
+---
+
+##  Análisis de Factibilidad
+
+### 3.1 Factibilidad Técnica
+El proyecto se desarrollará utilizando tecnologías de licencia gratuita y estándar en la industria.
+
+**Tecnologías a utilizar:**
+* **Lenguaje:** Java (JDK 17+).
+* **IDE:** NetBeans.
+* **Base de Datos:** MySQL (Server 8.0).
+* **Interfaz:** Java Swing (Escritorio).
+* **Arquitectura:** Local (Standalone).
+
+**Recursos:**
+* **Humanos:** 1 Desarrollador (Estudiante de Ingeniería en Software).
+* **Hardware:** Equipo de cómputo para desarrollo y PC de escritorio en tienda (existente).
+* **Periféricos:** Lector de códigos de barras USB.
+
+### Factibilidad Operativa
+Análisis de la adopción del sistema por parte de los usuarios finales.
+
+* **Resistencia al cambio:** El dueño solicitó explícitamente automatizar las sumas y precios para reducir la carga mental.
+* **Capacitación:** Se requiere una interfaz intuitiva que permita operar el sistema con menos de 1 hora de entrenamiento.
+* **Impacto en Procesos:** Se estima una reducción en el tiempo de atención al cliente de 3 minutos a 45 segundos por transacción.
 ## 3. Objetivos del Proyecto
-
-### Objetivo General
-Desarrollar e implementar un sistema de software de Punto de Venta (POS) e Inventario que automatice el proceso de cobro y la gestión de existencias, optimizando los tiempos de atención y asegurando la integridad financiera del negocio.
 
 
 ### Requerimientos Funcionales
