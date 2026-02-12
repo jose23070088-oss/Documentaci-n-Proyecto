@@ -6,18 +6,16 @@ El propósito de este proyecto es definir los requerimientos funcionales y no fu
 ## Requerimientos y Requisitos (IEEE 830)
 
 ### Requerimientos Funcionales
-* **Módulo de Ventas (Caja):**
-    * **Lectura de Códigos:** El sistema debe ser capaz de recibir la entrada de un lector de códigos de barras. Al escanear un código, el sistema debe buscar automáticamente el producto en la base de datos.
-    * **Recuperación de Precios:** Al identificar el producto escaneado, el sistema debe mostrar inmediatamente su descripción y precio de venta al público en la lista de compra actual.
-    * **Cálculo de Totales:** El sistema debe sumar automáticamente el total de la venta a medida que se agregan productos.
-* **Módulo de Inventario (Administrador de Productos):**
-    * **Gestión de Productos:** El sistema debe permitir al administrador Agregar, Editar y Eliminar productos.
-    * **Datos del Producto:** Cada producto debe tener almacenada la siguiente información mínima: Código de Barras, Descripción/Nombre, Precio de Costo y Precio de Venta.
-* **Módulo de Reportes y Finanzas:**
-    * **Registro de Ventas:** Cada venta finalizada debe guardarse en el historial con fecha y hora.
-    * **Reporte de Ganancias del Día:** El sistema debe generar un reporte diario que muestre el total vendido (la suma de todo el dinero ingresado).
+### Requerimientos Funcionales
 
-### Requerimientos No Funcionales
+| ID Requisito | Requisito | Descripción de requisito | Negocio/Necesidad/oportunidad/objetivo | ¿Quién lo solicita? | Rol/Departamento | Entregable | Casos de prueba | Estado | Comentarios |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **RF01** | Lectura de Códigos | Recibir entrada de lector de código de barras y buscar automáticamente el producto en BD. | Agilizar el proceso de venta y reducir errores humanos. | Tienda Abarrotes | Cajero | 1.0 | Testing | Pendiente | Integración con hardware de escáner. |
+| **RF02** | Recuperación de Precios | Mostrar inmediatamente descripción y precio de venta en la lista al escanear. | Validar visualmente el producto y precio ante el cliente. | Tienda Abarrotes | Cajero | 1.0 | Testing | Pendiente | Debe coincidir con la BD. |
+| **RF03** | Cálculo de Totales | Sumar automáticamente el total de la venta conforme se agregan productos. | Automatizar el cobro y evitar cálculos manuales. | Tienda Abarrotes | Cajero | 1.0 | Testing | Pendiente | Actualización en tiempo real. |
+| **RF04** | Gestión de Productos | Permitir Agregar, Editar y Eliminar productos del inventario. | Mantener el catálogo y precios actualizados. | Tienda Abarrotes | Administrador | 1.1 | Testing | Pendiente | Campos: Código, Nombre, Costo, P. Venta. |
+| **RF05** | Registro de Ventas | Guardar cada venta finalizada en el historial con fecha y hora exacta. | Trazabilidad y seguridad de las transacciones. | Tienda Abarrotes | Sistema / Gerencia | 1.1 | Testing | Pendiente | Registro histórico inmutable. |
+| **RF06** | Reporte de Ganancias | Generar reporte diario mostrando el "Total Vendido" (
 ### Requerimientos No Funcionales
 
 | ID Requisito | Requisito | Descripción de requisito | Negocio/Necesidad/oportunidad/objetivo | ¿Quién lo solicita? | Rol/Departamento | Entregable | Casos de prueba | Estado | Comentarios |
