@@ -161,6 +161,21 @@ Análisis de la adopción del sistema por parte de los usuarios finales.
 | **RNF-04** | **Seguridad** | Encriptación de contraseñas y protección de módulos administrativos. | `🔘 Sin empezar` | `No Funcional` `Seguridad` |
 | **RNF-05** | **Fiabilidad** | Manejo de errores (el sistema no se cierra si falla una lectura). | `🔘 Sin empezar` | `No Funcional` `Calidad` |
 
+## Estimación de Costos (Fase de Desarrollo)
+
+| Categoría | Concepto / Recurso | Descripción y Uso en el Proyecto | Costo Estimado |
+| :--- | :--- | :--- | :--- |
+| **Hardware** | Computadora de Desarrollo | Equipo (ej. Core i5/Ryzen 5, 8GB+ RAM) para programar en Java y correr la BD local. | $ 0.00 |
+| **Hardware** | Lector de Código de Barras | Escáner USB económico para pruebas de desarrollo (eventos de teclado/KeyListeners). | $ 0.00 |
+| **Software** | Entorno de Desarrollo (IDE) | NetBeans, Eclipse o IntelliJ IDEA (Community) para escribir el código Java. | $ 0.00 |
+| **Software** | Gestor de Base de Datos | MySQL Server + Workbench para diseñar tablas y hacer pruebas locales. | $ 0.00 |
+| **Software** | Java Development Kit (JDK) | Librerías y compilador de Java necesarios para el desarrollo. | $ 0.00 |
+| **Software** | Control de Versiones | Git y GitHub para el alojamiento del código fuente y control de versiones. | $ 0.00 |
+| **Software** | Diseño UI/UX | Figma, Balsamiq o similar (nivel gratuito) para el prototipado de interfaces. | $ 0.00 |
+| **Recursos Humanos** | Horas de Desarrollo | Tiempo invertido en: Análisis, Diseño, Programación y Pruebas. | $ 0.00 |
+| **Servicios** | Internet y Electricidad | Proporcional de consumo durante las semanas de desarrollo. | $ 0.00 |
+| | | **TOTAL ESTIMADO DE DESARROLLO:** | **$ 0.00** |
+
 # Etapa 2: Diseño
 
 *(Aquí puedes añadir la estructura de tus tablas de SQL o el diseño de las ventanas de Java)*
