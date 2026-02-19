@@ -178,16 +178,16 @@ Análisis de la adopción del sistema por parte de los usuarios finales.
 
 ```mermaid
 graph LR
-    %% Definición de Estilos
-    classDef cajeroStyle fill:#3498db,stroke:#2980b9,color:#fff,stroke-width:2px;
-    classDef adminStyle fill:#e74c3c,stroke:#c0392b,color:#fff,stroke-width:2px;
-    classDef caseStyle fill:#f9f9f9,stroke:#333,stroke-width:1px;
+    %% Configuración de Colores y Contraste
+    classDef actorStyle fill:#2d3436,stroke:#000,color:#fff,stroke-width:2px;
+    classDef caseStyle fill:#f1f2f6,stroke:#2f3542,color:#000,stroke-width:1.5px;
+    classDef systemStyle fill:#ffffff,stroke:#2f3542,stroke-width:3px,color:#000;
 
-    %% Actores
-    C[👤 Cajero]:::cajeroStyle
-    A[👨‍💼 Administrador]:::adminStyle
+    %% Definición de Actores con Iconos
+    C[👤 Cajero]:::actorStyle
+    A[👨‍💼 Administrador]:::actorStyle
 
-    subgraph Sistema ["<b>SISTEMA PUNTO DE VENTA</b>"]
+    subgraph Sistema ["SISTEMA PUNTO DE VENTA"]
         UC1(Iniciar Sesión):::caseStyle
         UC2(Realizar Venta):::caseStyle
         UC3(Escanear Producto):::caseStyle
@@ -195,23 +195,26 @@ graph LR
         UC5(Generar Ticket):::caseStyle
         UC6(Gestionar Inventario):::caseStyle
         UC7(Ver Ganancias):::caseStyle
+        UC8(Cerrar Sesión):::caseStyle
     end
 
-    %% Relaciones de Actores
+    %% Relaciones Principales
     C --- UC1
     C --- UC2
-    
+    C --- UC8
+
     A --- UC1
     A --- UC6
     A --- UC7
+    A --- UC8
 
-    %% Relaciones Técnicas
+    %% Relaciones de Dependencia
     UC2 -.->|include| UC3
     UC2 -.->|include| UC5
     UC4 -.->|extend| UC3
 
-    %% Ajustes de diseño
-    style Sistema fill:#fff,stroke:#333,stroke-width:2px3
+    %% Aplicar estilo al contenedor
+    style Sistema fill:#dfe4ea,stroke:#2f3542,stroke-width:2px
 ```
 
 # Etapa 2: Diseño
