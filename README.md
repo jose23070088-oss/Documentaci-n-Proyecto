@@ -177,33 +177,30 @@ Análisis de la adopción del sistema por parte de los usuarios finales.
 
 
 ```mermaid
-useCaseDiagram
-    actor Cajero as "Cajero"
-    actor Admin as "Administrador"
+graph TD
+    subgraph "Sistema Punto de Venta"
+        UC1(Iniciar Sesión)
+        UC2(Realizar Venta)
+        UC3(Escanear Producto)
+        UC4(Buscar Manualmente)
+        UC5(Generar Ticket)
+        UC6(Gestionar Inventario)
+        UC7(Ver Reporte Ganancias)
+        UC8(Cerrar Sesión)
+    end
 
-    package "Sistema Punto de Venta" {
-        usecase UC1 as "Iniciar Sesión"
-        usecase UC2 as "Realizar Venta"
-        usecase UC3 as "Escanear Producto"
-        usecase UC4 as "Buscar Manualmente"
-        usecase UC5 as "Generar Ticket"
-        usecase UC6 as "Gestionar Inventario"
-        usecase UC7 as "Ver Reporte Ganancias"
-        usecase UC8 as "Cerrar Sesión"
-    }
+    C[Cajero] --- UC1
+    C --- UC2
+    C --- UC8
 
-    Cajero --> UC1
-    Cajero --> UC2
-    Cajero --> UC8
+    A[Administrador] --- UC1
+    A --- UC6
+    A --- UC7
+    A --- UC8
 
-    Admin --> UC1
-    Admin --> UC6
-    Admin --> UC7
-    Admin --> UC8
-
-    UC2 ..> UC3 : <<include>>
-    UC2 ..> UC5 : <<include>>
-    UC4 ..> UC3 : <<extend>>
+    UC2 -.->|include| UC3
+    UC2 -.->|include| UC5
+    UC4 -.->|extend| UC3
 ```
 
 # Etapa 2: Diseño
