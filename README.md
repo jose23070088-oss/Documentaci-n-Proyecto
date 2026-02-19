@@ -178,28 +178,28 @@ Análisis de la adopción del sistema por parte de los usuarios finales.
 
 ```mermaid
 useCaseDiagram
-    actor "Cajero" as C
-    actor "Administrador" as A
+    actor Cajero as "Cajero"
+    actor Admin as "Administrador"
 
     package "Sistema Punto de Venta" {
-        usecase "Iniciar Sesión" as UC1
-        usecase "Realizar Venta" as UC2
-        usecase "Escanear Producto" as UC3
-        usecase "Buscar Manualmente" as UC4
-        usecase "Generar Ticket" as UC5
-        usecase "Gestionar Inventario" as UC6
-        usecase "Ver Reporte Ganancias" as UC7
-        usecase "Cerrar Sesión" as UC8
+        usecase UC1 as "Iniciar Sesión"
+        usecase UC2 as "Realizar Venta"
+        usecase UC3 as "Escanear Producto"
+        usecase UC4 as "Buscar Manualmente"
+        usecase UC5 as "Generar Ticket"
+        usecase UC6 as "Gestionar Inventario"
+        usecase UC7 as "Ver Reporte Ganancias"
+        usecase UC8 as "Cerrar Sesión"
     }
 
-    C --> UC1
-    C --> UC2
-    C --> UC8
-    
-    A --> UC1
-    A --> UC6
-    A --> UC7
-    A --> UC8
+    Cajero --> UC1
+    Cajero --> UC2
+    Cajero --> UC8
+
+    Admin --> UC1
+    Admin --> UC6
+    Admin --> UC7
+    Admin --> UC8
 
     UC2 ..> UC3 : <<include>>
     UC2 ..> UC5 : <<include>>
