@@ -178,28 +178,29 @@ Análisis de la adopción del sistema por parte de los usuarios finales.
 
 ```mermaid
 graph LR
-    %% Configuración de Estilos Globales
-    classDef actorStyle fill:#2d3436,stroke:#000,color:#fff,stroke-width:2px;
-    classDef caseStyle fill:#ffffff,stroke:#2f3542,color:#000,stroke-width:1.5px;
-    classDef labelStyle background-color:#444,color:#fff,font-weight:bold;
+    %% Configuración de estilos para máxima legibilidad
+    classDef actorStyle fill:#333,stroke:#000,color:#fff,stroke-width:2px
+    classDef caseStyle fill:#fff,stroke:#000,color:#000,stroke-width:1.5px
+    classDef boxStyle fill:#eee,stroke:#333,stroke-width:2px,color:#000
 
     %% Actores
-    C[👤 Cajero]:::actorStyle
-    A[👨‍💼 Administrador]:::actorStyle
+    C[Cajero]:::actorStyle
+    A[Administrador]:::actorStyle
 
-    subgraph Sistema ["<span style='color:#000; font-size:18px; font-weight:bold;'>SISTEMA PUNTO DE VENTA</span>"]
-        direction TB
-        UC1(Iniciar Sesión):::caseStyle
+    subgraph Sistema ["SISTEMA PUNTO DE VENTA"]
+        UC1(Iniciar Sesion):::caseStyle
         UC2(Realizar Venta):::caseStyle
         UC3(Escanear Producto):::caseStyle
         UC4(Buscar Manualmente):::caseStyle
         UC5(Generar Ticket):::caseStyle
         UC6(Gestionar Inventario):::caseStyle
         UC7(Ver Ganancias):::caseStyle
-        UC8(Cerrar Sesión):::caseStyle
+        UC8(Cerrar Sesion):::caseStyle
     end
 
-    %% Conexiones con Actores (Forzamos color negro en las líneas)
+    %% Líneas de conexión (Forzamos color negro sólido)
+    linkStyle default stroke:#000,stroke-width:2px
+
     C --- UC1
     C --- UC2
     C --- UC8
@@ -209,14 +210,14 @@ graph LR
     A --- UC7
     A --- UC8
 
-    %% Relaciones Técnicas con etiquetas legibles
+    %% Relaciones con etiquetas de texto simple
     UC2 -.->|include| UC3
     UC2 -.->|include| UC5
     UC4 -.->|extend| UC3
 
-    %% Forzar visibilidad de líneas y textos específicos
-    linkStyle default stroke:#333,stroke-width:2px;
-    style Sistema fill:#f8f9fa,stroke:#333,stroke-width:3px;
+    %% Aplicar estilo al contenedor
+    style Sistema fill:#f2f2f2,stroke:#333,stroke-width:2px,color:#000
+ 
 ```
 
 # Etapa 2: Diseño
