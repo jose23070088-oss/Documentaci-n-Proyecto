@@ -178,14 +178,15 @@ Análisis de la adopción del sistema por parte de los usuarios finales.
 
 ```mermaid
 graph LR
-    %% Configuración de estilos para máxima legibilidad
-    classDef actorStyle fill:#333,stroke:#000,color:#fff,stroke-width:2px
+    %% Configuración de Estilos para máxima legibilidad
+    classDef cajeroStyle fill:#2ecc71,stroke:#27ae60,color:#fff,stroke-width:2px
+    classDef adminStyle fill:#e74c3c,stroke:#c0392b,color:#fff,stroke-width:2px
     classDef caseStyle fill:#fff,stroke:#000,color:#000,stroke-width:1.5px
-    classDef boxStyle fill:#eee,stroke:#333,stroke-width:2px,color:#000
+    classDef systemStyle fill:#f9f9f9,stroke:#333,stroke-width:2px,color:#000
 
     %% Actores
-    C[Cajero]:::actorStyle
-    A[Administrador]:::actorStyle
+    C[Cajero]:::cajeroStyle
+    A[Administrador]:::adminStyle
 
     subgraph Sistema ["SISTEMA PUNTO DE VENTA"]
         UC1(Iniciar Sesion):::caseStyle
@@ -198,26 +199,29 @@ graph LR
         UC8(Cerrar Sesion):::caseStyle
     end
 
-    %% Líneas de conexión (Forzamos color negro sólido)
-    linkStyle default stroke:#000,stroke-width:2px
+    %% Conexiones del Cajero (Verdes)
+    C --- UC1 %% Línea 0
+    C --- UC2 %% Línea 1
+    C --- UC8 %% Línea 2
 
-    C --- UC1
-    C --- UC2
-    C --- UC8
+    %% Conexiones del Administrador (Rojas)
+    A --- UC1 %% Línea 3
+    A --- UC6 %% Línea 4
+    A --- UC7 %% Línea 5
+    A --- UC8 %% Línea 6
 
-    A --- UC1
-    A --- UC6
-    A --- UC7
-    A --- UC8
+    %% Relaciones Técnicas (Negras)
+    UC2 -.->|include| UC3 %% Línea 7
+    UC2 -.->|include| UC5 %% Línea 8
+    UC4 -.->|extend| UC3  %% Línea 9
 
-    %% Relaciones con etiquetas de texto simple
-    UC2 -.->|include| UC3
-    UC2 -.->|include| UC5
-    UC4 -.->|extend| UC3
+    %% Aplicar Colores a las Líneas (linkStyle)
+    linkStyle 0,1,2 stroke:#2ecc71,stroke-width:2px;
+    linkStyle 3,4,5,6 stroke:#e74c3c,stroke-width:2px;
+    linkStyle 7,8,9 stroke:#000,stroke-width:1px;
 
-    %% Aplicar estilo al contenedor
+    %% Estilo del contenedor
     style Sistema fill:#f2f2f2,stroke:#333,stroke-width:2px,color:#000
- 
 ```
 
 # Etapa 2: Diseño
