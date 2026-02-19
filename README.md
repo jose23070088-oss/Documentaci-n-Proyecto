@@ -175,6 +175,34 @@ Análisis de la adopción del sistema por parte de los usuarios finales.
 | **Servicios** | Internet y Electricidad | Proporcional de consumo durante las semanas de desarrollo. | $ 0.00 |
 | | | **TOTAL ESTIMADO DE DESARROLLO:** | **$ 0.00** |
 
+useCaseDiagram
+    actor "Cajero" as C
+    actor "Administrador" as A
+
+    package "Sistema Punto de Venta" {
+        usecase "Iniciar Sesión" as UC1
+        usecase "Realizar Venta" as UC2
+        usecase "Escanear Producto" as UC3
+        usecase "Buscar Manualmente" as UC4
+        usecase "Generar Ticket" as UC5
+        usecase "Gestionar Inventario" as UC6
+        usecase "Ver Reporte Ganancias" as UC7
+        usecase "Cerrar Sesión" as UC8
+    }
+
+    C --> UC1
+    C --> UC2
+    C --> UC8
+    
+    A --> UC1
+    A --> UC6
+    A --> UC7
+    A --> UC8
+
+    UC2 ..> UC3 : <<include>>
+    UC2 ..> UC5 : <<include>>
+    UC3 <.. UC4 : <<extend>>
+
 # Etapa 2: Diseño
 
 *(Aquí puedes añadir la estructura de tus tablas de SQL o el diseño de las ventanas de Java)*
