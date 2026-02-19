@@ -174,6 +174,8 @@ Análisis de la adopción del sistema por parte de los usuarios finales.
 | **Recursos Humanos** | Horas de Desarrollo | Tiempo invertido en: Análisis, Diseño, Programación y Pruebas. | $ 0.00 |
 | **Servicios** | Internet y Electricidad | Proporcional de consumo durante las semanas de desarrollo. | $ 0.00 |
 | | | **TOTAL ESTIMADO DE DESARROLLO:** | **$ 0.00** |
+
+
 ```mermaid
 useCaseDiagram
     actor "Cajero" as C
@@ -201,7 +203,7 @@ useCaseDiagram
 
     UC2 ..> UC3 : <<include>>
     UC2 ..> UC5 : <<include>>
-    UC3 <.. UC4 : <<extend>>
+    UC4 ..> UC3 : <<extend>>
 ```
 
 # Etapa 2: Diseño
