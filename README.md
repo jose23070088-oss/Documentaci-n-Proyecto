@@ -177,30 +177,41 @@ Análisis de la adopción del sistema por parte de los usuarios finales.
 
 
 ```mermaid
-graph TD
-    subgraph "Sistema Punto de Venta"
-        UC1(Iniciar Sesión)
-        UC2(Realizar Venta)
-        UC3(Escanear Producto)
-        UC4(Buscar Manualmente)
-        UC5(Generar Ticket)
-        UC6(Gestionar Inventario)
-        UC7(Ver Reporte Ganancias)
-        UC8(Cerrar Sesión)
+graph LR
+    %% Definición de Estilos
+    classDef cajeroStyle fill:#3498db,stroke:#2980b9,color:#fff,stroke-width:2px;
+    classDef adminStyle fill:#e74c3c,stroke:#c0392b,color:#fff,stroke-width:2px;
+    classDef caseStyle fill:#f9f9f9,stroke:#333,stroke-width:1px;
+
+    %% Actores
+    C[👤 Cajero]:::cajeroStyle
+    A[👨‍💼 Administrador]:::adminStyle
+
+    subgraph Sistema ["<b>SISTEMA PUNTO DE VENTA</b>"]
+        UC1(Iniciar Sesión):::caseStyle
+        UC2(Realizar Venta):::caseStyle
+        UC3(Escanear Producto):::caseStyle
+        UC4(Buscar Manualmente):::caseStyle
+        UC5(Generar Ticket):::caseStyle
+        UC6(Gestionar Inventario):::caseStyle
+        UC7(Ver Ganancias):::caseStyle
     end
 
-    C[Cajero] --- UC1
+    %% Relaciones de Actores
+    C --- UC1
     C --- UC2
-    C --- UC8
-
-    A[Administrador] --- UC1
+    
+    A --- UC1
     A --- UC6
     A --- UC7
-    A --- UC8
 
+    %% Relaciones Técnicas
     UC2 -.->|include| UC3
     UC2 -.->|include| UC5
     UC4 -.->|extend| UC3
+
+    %% Ajustes de diseño
+    style Sistema fill:#fff,stroke:#333,stroke-width:2px3
 ```
 
 # Etapa 2: Diseño
