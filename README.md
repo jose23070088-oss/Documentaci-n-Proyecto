@@ -174,8 +174,7 @@ Análisis de la adopción del sistema por parte de los usuarios finales.
 | **Recursos Humanos** | Horas de Desarrollo | Tiempo invertido en: Análisis, Diseño, Programación y Pruebas. | $ 0.00 |
 | **Servicios** | Internet y Electricidad | Proporcional de consumo durante las semanas de desarrollo. | $ 0.00 |
 | | | **TOTAL ESTIMADO DE DESARROLLO:** | **$ 0.00** |
-
-``` mermaid
+```mermaid
 useCaseDiagram
     actor "Cajero" as C
     actor "Administrador" as A
