@@ -178,16 +178,17 @@ Análisis de la adopción del sistema por parte de los usuarios finales.
 
 ```mermaid
 graph LR
-    %% Configuración de Colores y Contraste
+    %% Configuración de Estilos Globales
     classDef actorStyle fill:#2d3436,stroke:#000,color:#fff,stroke-width:2px;
-    classDef caseStyle fill:#f1f2f6,stroke:#2f3542,color:#000,stroke-width:1.5px;
-    classDef systemStyle fill:#ffffff,stroke:#2f3542,stroke-width:3px,color:#000;
+    classDef caseStyle fill:#ffffff,stroke:#2f3542,color:#000,stroke-width:1.5px;
+    classDef labelStyle background-color:#444,color:#fff,font-weight:bold;
 
-    %% Definición de Actores con Iconos
+    %% Actores
     C[👤 Cajero]:::actorStyle
     A[👨‍💼 Administrador]:::actorStyle
 
-    subgraph Sistema ["SISTEMA PUNTO DE VENTA"]
+    subgraph Sistema ["<span style='color:#000; font-size:18px; font-weight:bold;'>SISTEMA PUNTO DE VENTA</span>"]
+        direction TB
         UC1(Iniciar Sesión):::caseStyle
         UC2(Realizar Venta):::caseStyle
         UC3(Escanear Producto):::caseStyle
@@ -198,7 +199,7 @@ graph LR
         UC8(Cerrar Sesión):::caseStyle
     end
 
-    %% Relaciones Principales
+    %% Conexiones con Actores (Forzamos color negro en las líneas)
     C --- UC1
     C --- UC2
     C --- UC8
@@ -208,13 +209,14 @@ graph LR
     A --- UC7
     A --- UC8
 
-    %% Relaciones de Dependencia
+    %% Relaciones Técnicas con etiquetas legibles
     UC2 -.->|include| UC3
     UC2 -.->|include| UC5
     UC4 -.->|extend| UC3
 
-    %% Aplicar estilo al contenedor
-    style Sistema fill:#dfe4ea,stroke:#2f3542,stroke-width:2px
+    %% Forzar visibilidad de líneas y textos específicos
+    linkStyle default stroke:#333,stroke-width:2px;
+    style Sistema fill:#f8f9fa,stroke:#333,stroke-width:3px;
 ```
 
 # Etapa 2: Diseño
