@@ -1,29 +1,3 @@
-# Etapa 1: Análisis
-
-## Proyecto: Sistema de Punto de Venta (POS) "Los Dos Hermanos"
-
-## Introducción
-La tienda de abarrotes **"Los Dos Hermanos"** actualmente gestiona sus ventas y control de inventario de forma manual, basándose en la memoria del dueño, anotaciones en libreta y uso de calculadora básica. Esto ha generado lentitud en el cobro, errores en el cálculo de cambio, desconocimiento de las ganancias reales y falta de control sobre el stock.
-
-## Entrevista Inicial
-
-**Estudiante :**
-Buenos días, soy estudiante de ISC en el Tecnológico de Motul y como parte de mi proyecto en la materia de Ingeniería en Software vengo a hablar de las dificultades que usted tenga a la hora de administrar su tienda de abarrotes.
-
-**Cliente (Dueño de la tienda):**
-Adelante, joven.
-
-**Estudiante :**
-¿Qué es lo que más se le dificulta en la tienda?
-
-**Cliente (Dueño de la tienda):**
-Bueno, lo principal es que quiero automatizar el proceso de venta, ya que actualmente me cuesta trabajo registrar los productos con sus costos y precios de venta. También se me complica el cobro, necesito que el cálculo de totales sea automático a medida que agrego productos para no tardar, y al final del día me gustaría poder generar reportes de cierre de caja con el cálculo de mis ganancias, cosa que ahora no puedo hacer bien.
-
-**Estudiante :**
-Bueno tomando en cuenta lo que me dijo, ¿qué le parece una aplicación de Sistema de Punto de Venta (POS) que le permita realizar ventas mediante el escaneo de códigos de barras y busque automáticamente el producto en la base de datos?
-
-**Cliente (Dueño de la tienda):**
-La verdad es justo lo que necesito. Si esa aplicación puede hacer las sumas solita y decirme el precio nada más pasando el producto, me quitaría un gran peso de encima. Así ya no tendría que estar batallando con la calculadora ni preocupándome por si cobré mal.
 
 # Levantamiento de Requerimientos
 
